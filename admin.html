@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Portafolio del Aprendiz</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="vendors/feather/feather.css">
+  <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <link rel="stylesheet" href="vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+  <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" type="text/css" href="js/select.dataTables.min.css">
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="css/vertical-layout-light/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="images/favi.png" />
+</head>
+<body>
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+        <a class="navbar-brand brand-logo mr-5" href="index.html"><img src="images/A D S I (1).png" class="mr-2" alt="logo"/></a>
+        <a class="navbar-brand brand-logo-mini" href="index.html"><img src="images/A D S I (1).png" alt="logo"/></a>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+        <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+          <span class="icon-menu"></span>
+        </button>
+        <ul class="navbar-nav mr-lg-2">
+          <li class="nav-item nav-search d-none d-lg-block">
+            <div class="input-group">
+              <div class="input-group-prepend hover-cursor" id="navbar-search-icon">
+                <span class="input-group-text" id="search">
+                  <i class="icon-search"></i>
+                </span>
+              </div>
+              <input type="text" class="form-control" id="navbar-search-input" placeholder="Busqueda nueva.." aria-label="search" aria-describedby="search">
+            </div>
+          </li>
+        </ul>
+        <ul class="navbar-nav navbar-nav-right">
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
+              <i class="icon-bell mx-0"></i>
+              <span class="count"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+              <p class="mb-0 font-weight-normal float-left dropdown-header">Notificaciones</p>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-success">
+                    <i class="ti-info-alt mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Informacion</h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    Informacion de la pagina
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-warning">
+                    <i class="ti-settings mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Ajustes</h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    privaciad,datos..etc
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-info">
+                    <i class="ti-user mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">SALIR</h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    Crear una nueva cuenta
+                  </p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item nav-profile dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
+              <img src="images/perfil-662x662.jpg" alt="profile"/>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+              <a class="dropdown-item">
+                <i class="ti-settings text-primary"></i>
+                Ajustes
+              </a>
+              <a class="dropdown-item" href="index.html">
+                <i class="ti-power-off text-primary"></i>
+                Cerrar Seccion
+              </a>
+            </div>
+          </li>
+          <li class="nav-item nav-settings d-none d-lg-flex">
+            <a class="nav-link" href="#">
+              <i class="icon-ellipsis"></i>
+            </a>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+          <span class="icon-menu"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_settings-panel.html -->
+      <div class="theme-setting-wrapper">
+        <div id="settings-trigger"><i class="ti-settings"></i></div>
+        <div id="theme-settings" class="settings-panel">
+          <i class="settings-close ti-close"></i>
+          <p class="settings-heading">SIDEBAR SKINS</p>
+          <div class="sidebar-bg-options selected" id="sidebar-light-theme"><div class="img-ss rounded-circle bg-light border mr-3"></div>Light</div>
+          <div class="sidebar-bg-options" id="sidebar-dark-theme"><div class="img-ss rounded-circle bg-dark border mr-3"></div>Dark</div>
+          <p class="settings-heading mt-2">HEADER SKINS</p>
+          <div class="color-tiles mx-0 px-4">
+            <div class="tiles success"></div>
+            <div class="tiles warning"></div>
+            <div class="tiles danger"></div>
+            <div class="tiles info"></div>
+            <div class="tiles dark"></div>
+            <div class="tiles default"></div>
+          </div>
+        </div>
+      </div>
+      <div id="right-sidebar" class="settings-panel">
+        <i class="settings-close ti-close"></i>
+        <ul class="nav nav-tabs border-top" id="setting-panel" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="todo-tab" data-toggle="tab" href="#todo-section" role="tab" aria-controls="todo-section" aria-expanded="true">Lista de tareas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="chats-tab" data-toggle="tab" href="#chats-section" role="tab" aria-controls="chats-section">Mensajes</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="setting-content">
+          <div class="tab-pane fade show active scroll-wrapper" id="todo-section" role="tabpanel" aria-labelledby="todo-section">
+            <div class="add-items d-flex px-3 mb-0">
+              <form class="form w-100">
+                <div class="form-group d-flex">
+                  <input type="text" class="form-control todo-list-input" placeholder="Añadir tarea nueva">
+                  <button type="submit" class="add btn btn-primary todo-list-add-btn" id="add-task">Agregar</button>
+                </div>
+              </form>
+            </div>
+            <div class="list-wrapper px-3">
+              <ul class="d-flex flex-column-reverse todo-list">
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      ACT.#11 PSEINT: ESTRUCTURA DE CONTROL ITERATIVO
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Act.#6. JavaScript: Funciones
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Act.#9 CSS3: FLEXBOX: Media Query
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li class="completed">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox" checked>
+                      Ac.2: BOOTSTRAP 5: Containers
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li class="completed">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox" checked>
+                      ACT.#16 PYTHON: FUNCIONES. (CON PARÁMETROS)
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+              </ul>
+            </div>
+            <h4 class="px-3 text-muted mt-5 font-weight-light mb-0">Eventos</h4>
+            <div class="events pt-4 px-3">
+              <div class="wrapper d-flex mb-2">
+                <i class="ti-control-record text-primary mr-2"></i>
+                <span>Feb 11 2023</span>
+              </div>
+              <p class="mb-0 font-weight-thin text-gray">Celebracion dia del aprendiz</p>
+              <p class="text-gray mb-0">Lugar:Sena la gallera</p>
+            </div>
+            <div class="events pt-4 px-3">
+              <div class="wrapper d-flex mb-2">
+                <i class="ti-control-record text-primary mr-2"></i>
+                <span>Abril 8 2023</span>
+              </div>
+              <p class="mb-0 font-weight-thin text-gray">Presentar proyecto ADSI</p>
+              <p class="text-gray mb-0 ">Lugar:Sena Boston (Auditorio)</p>
+            </div>
+          </div>
+          <!-- To do section tab ends -->
+          <div class="tab-pane fade" id="chats-section" role="tabpanel" aria-labelledby="chats-section">
+            <div class="d-flex align-items-center justify-content-between border-bottom">
+              <p class="settings-heading border-top-0 mb-3 pl-3 pt-0 border-bottom-0 pb-0">Amigos</p>
+              <small class="settings-heading border-top-0 mb-3 pt-0 border-bottom-0 pb-0 pr-3 font-weight-normal">Ver Todos</small>
+            </div>
+            <ul class="chat-list">
+              <li class="list active">
+                <div class="profile"><img src="images/luuis.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Luis Arroyo</p>
+                  <p>Tu: Ya te envie eso papi</p>
+                </div>
+                <small class="text-muted my-auto">19 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/luisa.jpeg" alt="image"><span class="offline"></span></div>
+                <div class="info">
+                  <div class="wrapper d-flex">
+                    <p>Luisa Ramoz</p>
+                  </div>
+                  <p><strong> Faltas por pagar lo del cumple...</strong> </p>
+                </div>
+                <div class="badge badge-success badge-pill my-auto mx-2">4</div>
+                <small class="text-muted my-auto">23 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/mono.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Eliud Vergara</p>
+                  <p> <strong> Oe paame la tarea.. </strong> </p>
+                </div>
+                <div class="badge badge-success badge-pill my-auto mx-2">2</div>
+                <small class="text-muted my-auto">14 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/borja.jpeg" alt="image"><span class="offline"></span></div>
+                <div class="info">
+                  <p>Rafael Borja</p>
+                  <p>Tu: Ya enviaste eso?</p>
+                </div>
+                <small class="text-muted my-auto">2 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/lau.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Laura Mariota</p>
+                  <p>Tu: Si eso dijo el profe..</p>
+                </div>
+                <small class="text-muted my-auto">5 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/bor.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Jesus Bohorquez</p>
+                  <p>Tu: Nose yo digo que si perro</p>
+                </div>
+                <small class="text-muted my-auto">47 min</small>
+              </li>
+            </ul>
+          </div>
+          <!-- chat tab ends -->
+        </div>
+      </div>
+      <!-- partial -->
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title">Portafolio Aprendiz</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+              <i class="icon-layout menu-icon"></i>
+              <span class="menu-title">Pseudocodigo</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Botones</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">Lista Desplegable</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Tipografia</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
+              <i class="icon-columns menu-icon"></i>
+              <span class="menu-title">HTML 5</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="form-elements">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="HTML5/ac1.docx">Actividad #1</a></li>
+                <li class="nav-item"><a class="nav-link" href="HTML5/ac2.docx">Actividad #2</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://www.youtube.com/watch?v=lPRLMKSnWmo&ab_channel=Ysith311">Actividad #3</a></li>
+                <li class="nav-item"><a class="nav-link" href="HTML5/Actividad_4_HTML/index.html">Actividad #4</a></li>
+                <li class="nav-item"><a class="nav-link" href="HTML5/Actividad_5_HTML/Actividad_5_HTML/salchipapa.html">Actividad #5</a></li>
+                <li class="nav-item"><a class="nav-link" href="HTML5/Actividad_6_HTML/salchipapa.html">Actividad #6</a></li>
+                <li class="nav-item"><a class="nav-link" href="HTML5/Actividad_7_HTML/salchipapa.html">Actividad #7</a></li>
+                <li class="nav-item"><a class="nav-link" href="HTML5/Actividad_8_HTML/index.html">Actividad #8</a></li>
+                <li class="nav-item"><a class="nav-link" href="HTML5/Actividad_9_HTML/index.html">Actividad #9</a></li>
+                <li class="nav-item"><a class="nav-link" href="HTML5/Actividad_10_HTML/index.html">Actividad #10</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
+              <i class="icon-bar-graph menu-icon"></i>
+              <span class="menu-title">CSS 3</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="charts">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="HTML5+CCS3/CSS/index.html">Actividad #1</a></li>
+                <li class="nav-item"> <a class="nav-link" href="HTML5+CCS3/Actividad 2/index.html">Actividad #2</a></li>
+                <li class="nav-item"> <a class="nav-link" href="HTML5+CCS3/ejemplo1/index.html">Actividad #3</a></li>
+                <li class="nav-item"> <a class="nav-link" href="HTML5+CCS3/Ejemplo9/index.html">Actividad #4</a></li>
+                <li class="nav-item"> <a class="nav-link" href="HTML5+CCS3/Flexbox/Proyecto1/index.html">Actividad #5</a></li>
+                <li class="nav-item"> <a class="nav-link" href="HTML5+CCS3/Flexbox/Proyecto2/index.html">Actividad #6</a></li>
+                <li class="nav-item"> <a class="nav-link" href="HTML5+CCS3/Flexbox/Proyecto 3/index.html">Actividad #7</a></li>
+                <li class="nav-item"> <a class="nav-link" href="HTML5+CCS3/Modelbox/index.html">Actividad #8</a></li>
+                <li class="nav-item"> <a class="nav-link" href="HTML5+CCS3/#">Actividad #9</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
+              <i class="icon-grid-2 menu-icon"></i>
+              <span class="menu-title">Javascript 6</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="tables">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="Java/Ejemplo1/index.html">Actividad #1</a></li>
+                <li class="nav-item"> <a class="nav-link" href="Java/Ejemplo2/index.html">Actividad #2</a></li>
+                <li class="nav-item"> <a class="nav-link" href="Java/Ejemplo3/index.html">Actividad #3</a></li>
+                <li class="nav-item"> <a class="nav-link" href="Java/Ejemplo4/index.html">Actividad #4</a></li>
+                <li class="nav-item"> <a class="nav-link" href="Java/Ejemplo5/index.html">Actividad #5</a></li>
+                <li class="nav-item"> <a class="nav-link" href="Java/Ejemplo6/index.html">Actividad #6</a></li>
+                <li class="nav-item"> <a class="nav-link" href="Java/Ejemplo7/index.html">Actividad #7</a></li>
+                <li class="nav-item"> <a class="nav-link" href="Java/Ejemplo8/index.html">Actividad #8</a></li>
+                <li class="nav-item"> <a class="nav-link" href="Java/Ejemplo9/index.html">Actividad #9</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
+              <i class="icon-contract menu-icon"></i>
+              <span class="menu-title">Estructuras Python</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="icons">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
+                    <i class="icon-contract menu-icon"></i>
+                    <span class="menu-title">Ciclicas</span>
+                    <i class="menu-arrow"></i>
+                  </a>
+                  <div class="collapse" id="icons">
+                    <ul class="nav flex-column sub-menu">
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA CICLICAS/proyecto1.py">Acti.. #1</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA CICLICAS/proyecto2.py">Acti.. #2</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA CICLICAS/proyecto3.py">Acti.. #3</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA CICLICAS/proyecto4.py">Acti.. #4</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA CICLICAS/ACTIVIDAD/ACTIVAD CON 3/acti1.py">Acti.. #5</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA CICLICAS/ACTIVIDAD/ACTIVAD CON 3/acti2.py">Acti.. #6</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA CICLICAS/ACTIVIDAD/ACTIVAD CON 3/acti3.py">Acti.. #7</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA CICLICAS/ACTIVIDAD/FOR/proyecto1.py">FOR. #1</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA CICLICAS/ACTIVIDAD/FOR/proyecto2.py">FOR. #2</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA CICLICAS/ACTIVIDAD/FOR/proyecto3.py">FOR. #3</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA CICLICAS/ACTIVIDAD/FOR/proyecto4.py">FOR. #4</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA CICLICAS/ACTIVIDAD/FOR/proyecto5.py">FOR. #5</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA CICLICAS/ACTIVIDAD/FOR/proyecto6.py">FOR. #6</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA CICLICAS/ACTIVIDAD/FOR/proyecto7.py">FOR. #7</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA CICLICAS/ACTIVIDAD/WHILE/proyecto1.py">WHILE. #1</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA CICLICAS/ACTIVIDAD/WHILE/proyecto2.py">WHILE. #2</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA CICLICAS/ACTIVIDAD/WHILE/proyecto3.py">WHILE. #3</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA CICLICAS/ACTIVIDAD/WHILE/proyecto4.py">WHILE. #4</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA CICLICAS/ACTIVIDAD/WHILE/proyecto5.py">WHILE. #5</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA CICLICAS/ACTIVIDAD/WHILE/proyecto6.py">WHILE. #6</a></ul>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
+                    <i class="icon-contract menu-icon"></i>
+                    <span class="menu-title">Condicionales</span>
+                    <i class="menu-arrow"></i>
+                  </a>
+                  <div class="collapse" id="icons">
+                    <ul class="nav flex-column sub-menu">
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA CONDICIONAL/PROYECTO1.py">Acti..  #1</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA CONDICIONAL/PROYECTO2.PY">Acti..  #2</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA CONDICIONAL/PROYECTO3.py">Acti..  #3</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA CONDICIONAL/PROYECTO4.py">Acti..  #4</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA CONDICIONAL/PROYECTO.5.py">Acti..  #5</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA CONDICIONAL/PROYECTO6.py">Acti..  #6</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA CONDICIONAL/PROYECTO7.py">Acti..  #7</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA CONDICIONAL/PROYECTO8.py">Acti..  #8</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA CONDICIONAL/PROYECTO9.py">Acti..  #9</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA CONDICIONAL/PROYECTO10.PY">Acti.. #10</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA CONDICIONAL/PROYECTO1X.py">Acti.. #11</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA CONDICIONAL/actividad/PROYECTO9.py">Acti.. #12</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA CONDICIONAL/actividad/PROYECTO9.py">Acti.. #13</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA CONDICIONAL/actividad/PROYECTO10.PY">Acti.. #14</a></ul>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
+                    <i class="icon-contract menu-icon"></i>
+                    <span class="menu-title">De Datos</span>
+                    <i class="menu-arrow"></i>
+                  </a>
+                  <div class="collapse" id="icons">
+                    <ul class="nav flex-column sub-menu">
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA DE DATOS 3110/AC1.PY">Acti.. #1</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA DE DATOS 3110/AC2.PY">Acti.. #2</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA DE DATOS 3110/AC3.PY">Acti.. #3</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA DE DATOS 3110/AC4.PY">Acti.. #4</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA DE DATOS 3110/AC100.PY">Acti.. #5</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA DE DATOS 3110/añadir elementosalista.py">Acti.. #6</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA DE DATOS 3110/AÑADIR OTRA LISTA AUN ALISTA.PY">Acti.. #7</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA DE DATOS 3110/CARROS.PY">Acti.. #8</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA DE DATOS 3110/diccionarios/diccionario.py">Acti.. #9</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA DE DATOS 3110/diciionario para añadir elemntos/Diccionario.py">Acti.. #10</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA DE DATOS 3110/diciionario para añadir elemntos/diccionarioempresa.py">Acti.. #11</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA DE DATOS 3110/diciionario para añadir elemntos/dicionariofrutas.py">Acti.. #12</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA DE DATOS 3110/eliminar elemntosde lista.py">Acti.. #13</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA DE DATOS 3110/factura.py">Acti.. #14</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA DE DATOS 3110/lista vacia y meter datos.py">Acti.. #15</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA DE DATOS 3110/listaconelementos.PY">Acti.. #16</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA DE DATOS 3110/mostar longitud de la lista.py">Acti.. #17</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA DE DATOS 3110/Peliculas.py">Acti.. #18</a></ul>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
+                    <i class="icon-contract menu-icon"></i>
+                    <span class="menu-title">Secuenciales</span>
+                    <i class="menu-arrow"></i>
+                  </a>
+                  <div class="collapse" id="icons">
+                    <ul class="nav flex-column sub-menu">
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA SECUENCIAL/proyecto1.py">Acti.. #1</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA SECUENCIAL/proyecto2.py">Acti.. #2</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA SECUENCIAL/proyecto3.py">Acti.. #3</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA SECUENCIAL/proyecto4.py">Acti.. #4</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA SECUENCIAL/proyecto5.py">Acti.. #5</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA SECUENCIAL/proyecto6.py">Acti.. #6</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA SECUENCIAL/proyecto7.py">Acti.. #7</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA SECUENCIAL/proyecto8.py">Acti.. #8</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA SECUENCIAL/proyecto9.py">Acti.. #9</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA SECUENCIAL/proyecto10.py">Acti.. #10</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA SECUENCIAL/proyecto11.py">Acti.. #11</a></ul>
+                      <ul class="nav-item"> <a class="nav-link" href="PYTHON/ESTRUCTURA SECUENCIAL/proyecto12.py">Acti.. #12</a></ul>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/documentation/documentation.html">
+              <i class="icon-paper menu-icon"></i>
+              <span class="menu-title">Documentacion</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-md-12 grid-margin">
+              <div class="row">
+                <div class="col-12 col-xl-8 mb-4 mb-xl-0">
+                  <h3 class="font-weight-bold">Bienvenido, estamos en linea!</h3>
+                  <h6 class="font-weight-normal mb-0">Analisis y Desarrollo de Sistemas de Informacion <span class="text-primary">Sena Regional Sucre</span></h6>
+                </div>
+                <div class="col-12 col-xl-4">
+                 <div class="justify-content-end d-flex">
+                  <div class="dropdown flex-md-grow-1 flex-xl-grow-0">
+                    <button class="btn btn-sm btn-light bg-white dropdown-toggle" type="button" id="dropdownMenuDate2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                     <i class="mdi mdi-calendar"></i> Hoy (10 Junio 2021)
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuDate2">
+                      <a class="dropdown-item" href="#">Enero - Marzo</a>
+                      <a class="dropdown-item" href="#">Marzo - Junio</a>
+                      <a class="dropdown-item" href="#">Junio - Agosto</a>
+                      <a class="dropdown-item" href="#">Agosto - Noviembre</a>
+                    </div>
+                  </div>
+                 </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 grid-margin stretch-card">
+                <div class="card-people mt-auto">
+                  <img src="images/3.jpg" alt="people">
+                  <div class="weather-info">
+                    <div class="d-flex">
+                      <div class="ml-2">
+                        <h4 class="location font-weight-normal">Sincelejo</h4>
+                        <h6 class="font-weight-normal">Colombia</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-6 grid-margin transparent">
+              <div class="row">
+                <div class="col-md-6 mb-4 stretch-card transparent">
+                  <div class="card card-tale">
+                    <div class="card-body">
+                      <p class="mb-4">Total de tareas</p>
+                      <p class="fs-30 mb-2">120</p>
+                      <p>100% (1 año)</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4 stretch-card transparent">
+                  <div class="card card-dark-blue">
+                    <div class="card-body">
+                      <p class="mb-4">HTML5</p>
+                      <p class="fs-30 mb-2">50</p>
+                      <p>80.% (25 Dias)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 mb-4 mb-lg-0 stretch-card transparent">
+                  <div class="card card-light-blue">
+                    <div class="card-body">
+                      <p class="mb-4">CCS3</p>
+                      <p class="fs-30 mb-2">38</p>
+                      <p>40% (15 Dias)</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 stretch-card transparent">
+                  <div class="card card-light-danger">
+                    <div class="card-body">
+                      <p class="mb-4">Python</p>
+                      <p class="fs-30 mb-2">78</p>
+                      <p>70% (28 dias)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 grid-margin stretch-card">
+              <div class="card position-relative">
+                <div class="card-body">
+                  <div id="detailedReports" class="carousel slide detailed-report-carousel position-static pt-2" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="row">
+                          <div class="col-md-12 col-xl-3 d-flex flex-column justify-content-start">
+                            <div class="ml-xl-4 mt-3">
+                            <p class="card-title">Detalles de la clase</p>
+                              <h1 class="text-primary">ADSI </h1>
+                              <h3 class="font-weight-500 mb-xl-4 text-primary">#2502240</h3>
+                              <p class="mb-2 mb-xl-0">La clase dede ADSI hasta el momento me parece muy buena no pense enamorarme tanto de la programacion como lo estoy ahora, gracias a los instructores por inculcarme todo lo que se hoy dia</p>
+                            </div>  
+                            </div>
+                          <div class="col-md-12 col-xl-9">
+                            <div class="row">
+                              <div class="col-md-6 border-right">
+                                <div class="table-responsive mb-3 mb-md-0 mt-3">
+                                  <table class="table table-borderless report-table">
+                                    <tr>
+                                      <td class="text-muted">Eliseo</td>
+                                      <td class="w-100 px-0">
+                                        <div class="progress progress-md mx-4">
+                                          <div class="progress-bar bg-primary" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                      </td>
+                                      <td><h5 class="font-weight-bold mb-0">50%</h5></td>
+                                    </tr>
+                                    <tr>
+                                      <td class="text-muted">Pedro</td>
+                                      <td class="w-100 px-0">
+                                        <div class="progress progress-md mx-4">
+                                          <div class="progress-bar bg-warning" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                      </td>
+                                      <td><h5 class="font-weight-bold mb-0">15%</h5></td>
+                                    </tr>
+                                    <tr>
+                                      <td class="text-muted">Mario</td>
+                                      <td class="w-100 px-0">
+                                        <div class="progress progress-md mx-4">
+                                          <div class="progress-bar bg-danger" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                      </td>
+                                      <td><h5 class="font-weight-bold mb-0">10%</h5></td>
+                                    </tr>
+                                    <tr>
+                                      <td class="text-muted">Juan</td>
+                                      <td class="w-100 px-0">
+                                        <div class="progress progress-md mx-4">
+                                          <div class="progress-bar bg-info" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                      </td>
+                                      <td><h5 class="font-weight-bold mb-0">5%</h5></td>
+                                    </tr>
+                                    <tr>
+                                      <td class="text-muted">Maicol</td>
+                                      <td class="w-100 px-0">
+                                        <div class="progress progress-md mx-4">
+                                          <div class="progress-bar bg-primary" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                      </td>
+                                      <td><h5 class="font-weight-bold mb-0">5%</h5></td>
+                                    </tr>
+                                    <tr>
+                                      <td class="text-muted">Jesus</td>
+                                      <td class="w-100 px-0">
+                                        <div class="progress progress-md mx-4">
+                                          <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                      </td>
+                                      <td><h5 class="font-weight-bold mb-0">5%</h5></td>
+                                    </tr>
+                                  </table>
+                                </div>
+                              </div>
+                              <div class="col-md-6 mt-3">
+                                <canvas id="north-america-chart"></canvas>
+                                <div id="north-america-legend"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="row">
+                          <div class="col-md-12 col-xl-3 d-flex flex-column justify-content-start">
+                            <div class="ml-xl-4 mt-3">
+                            <p class="card-title">Detalles de la clase</p>
+                              <h1 class="text-primary">ADSI</h1>
+                              <h3 class="font-weight-500 mb-xl-4 text-primary">#2502476</h3>
+                              <p class="mb-2 mb-xl-0">Me parece que la clase es perfecta debido a mi horario(nocturno) a veces se me dificulta ir a las clases pero del resto me parece una perfeccion.no me arrepiento de aver elegido esta carrera para estudiar</p>
+                            </div>  
+                            </div>
+                          <div class="col-md-12 col-xl-9">
+                            <div class="row">
+                              <div class="col-md-6 border-right">
+                                <div class="table-responsive mb-3 mb-md-0 mt-3">
+                                  <table class="table table-borderless report-table">
+                                    <tr>
+                                      <td class="text-muted">richard </td>
+                                      <td class="w-100 px-0">
+                                        <div class="progress progress-md mx-4">
+                                          <div class="progress-bar bg-primary" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                      </td>
+                                      <td><h5 class="font-weight-bold mb-0">50%</h5></td>
+                                    </tr>
+                                    <tr>
+                                      <td class="text-muted">josue</td>
+                                      <td class="w-100 px-0">
+                                        <div class="progress progress-md mx-4">
+                                          <div class="progress-bar bg-warning" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                      </td>
+                                      <td><h5 class="font-weight-bold mb-0">15%</h5></td>
+                                    </tr>
+                                    <tr>
+                                      <td class="text-muted">Pedro a</td>
+                                      <td class="w-100 px-0">
+                                        <div class="progress progress-md mx-4">
+                                          <div class="progress-bar bg-danger" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                      </td>
+                                      <td><h5 class="font-weight-bold mb-0">5%</h5></td>
+                                    </tr>
+                                    <tr>
+                                      <td class="text-muted">Maria</td>
+                                      <td class="w-100 px-0">
+                                        <div class="progress progress-md mx-4">
+                                          <div class="progress-bar bg-info" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                      </td>
+                                      <td><h5 class="font-weight-bold mb-0">5%</h5></td>
+                                    </tr>
+                                    <tr>
+                                      <td class="text-muted">Lucia</td>
+                                      <td class="w-100 px-0">
+                                        <div class="progress progress-md mx-4">
+                                          <div class="progress-bar bg-primary" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                      </td>
+                                      <td><h5 class="font-weight-bold mb-0">7%</h5></td>
+                                    </tr>
+                                    <tr>
+                                      <td class="text-muted">Manuel</td>
+                                      <td class="w-100 px-0">
+                                        <div class="progress progress-md mx-4">
+                                          <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                      </td>
+                                      <td><h5 class="font-weight-bold mb-0">3%</h5></td>
+                                    </tr>
+                                  </table>
+                                </div>
+                              </div>
+                              <div class="col-md-6 mt-3">
+                                <canvas id="south-america-chart"></canvas>
+                                <div id="south-america-legend"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#detailedReports" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#detailedReports" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="row">
+            <div class="col-md-4 stretch-card grid-margin">
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-title mb-0">ADSI</p>
+                  <div class="table-responsive">
+                    <table class="table table-borderless">
+                      <thead>
+                        <tr>
+                          <th class="pl-0  pb-2 border-bottom">Ciudades</th>
+                          <th class="border-bottom pb-2">Porcentajes</th>
+                          <th class="border-bottom pb-2">Alumnos</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="pl-0">Sincelejo</td>
+                          <td><p class="mb-0"><span class="font-weight-bold mr-2"></span>(50%)</p></td>
+                          <td class="text-muted">80</td>
+                        </tr>
+                        <tr>
+                          <td class="pl-0">Chinu</td>
+                          <td><p class="mb-0"><span class="font-weight-bold mr-2"></span>(35%)</p></td>
+                          <td class="text-muted">30</td>
+                        </tr>
+                        <tr>
+                          <td class="pl-0">Manizales</td>
+                          <td><p class="mb-0"><span class="font-weight-bold mr-2"></span>(22%)</p></td>
+                          <td class="text-muted">32</td>
+                        </tr>
+                        <tr>
+                          <td class="pl-0">Medellin</td>
+                          <td><p class="mb-0"><span class="font-weight-bold mr-2"></span>(70%)</p></td>
+                          <td class="text-muted">105</td>
+                        </tr>
+                        <tr>
+                          <td class="pl-0">Bogota</td>
+                          <td><p class="mb-0"><span class="font-weight-bold mr-2">17</span>(25%)</p></td>
+                          <td class="text-muted">60</td>
+                        </tr>
+                        <tr>
+                          <td class="pl-0">Cali</td>
+                          <td><p class="mb-0"><span class="font-weight-bold mr-2"></span>(81%)</p></td>
+                          <td class="text-muted">120</td>
+                        </tr>
+                        <tr>
+                          <td class="pl-0 pb-0">Barranquilla</td>
+                          <td class="pb-0"><p class="mb-0"><span class="font-weight-bold mr-2"></span>32%)</p></td>
+                          <td class="pb-0">54</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 stretch-card grid-margin">
+              <div class="row">
+                <div class="col-md-12 grid-margin stretch-card">
+                  <div class="card">
+                    <div class="card-body">
+                      <p class="card-title">Temas</p>
+                      <div class="charts-data">
+                        <div class="mt-3">
+                          <p class="mb-0">HTML</p>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <div class="progress progress-md flex-grow-1 mr-4">
+                              <div class="progress-bar bg-inf0" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p class="mb-0">100%</p>
+                          </div>
+                        </div>
+                        <div class="mt-3">
+                          <p class="mb-0">PYTHON </p>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <div class="progress progress-md flex-grow-1 mr-4">
+                              <div class="progress-bar bg-info" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p class="mb-0">30%</p>
+                          </div>
+                        </div>
+                        <div class="mt-3">
+                          <p class="mb-0">CSS</p>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <div class="progress progress-md flex-grow-1 mr-4">
+                              <div class="progress-bar bg-info" role="progressbar" style="width: 48%" aria-valuenow="48" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p class="mb-0">50%</p>
+                          </div>
+                        </div>
+                        <div class="mt-3">
+                          <p class="mb-0">JAVA</p>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <div class="progress progress-md flex-grow-1 mr-4">
+                              <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p class="mb-0">10%</p>
+                          </div>
+                        </div>
+                      </div>  
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12 stretch-card grid-margin grid-margin-md-0">
+                  <div class="card data-icon-card-primary">
+                    <div class="card-body">
+                      <p class="card-title text-white">ADSI</p>                      
+                      <div class="row">
+                        <div class="col-8 text-white">
+                          <p class="text-white font-weight-500 mb-0">Las interfaces de servicio de Active Directory (ADSI) son un conjunto de interfaces COM que se usan para acceder a las características de los servicios de directorio de diferentes proveedores de red </p>
+                        </div>
+                        <div class="col-4 background-icon">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 stretch-card grid-margin">
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-title">Notificaciones</p>
+                  <ul class="icon-data-list">
+                    <li>
+                      <div class="d-flex">
+                        <img src="images/luisa.jpeg" alt="user">
+                        <div>
+                          <p class="text-info mb-1">Luisa Ramos</p>
+                          <p class="mb-0">Profe ya envie el trabajo</p>
+                          <small>9:30 am</small>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="d-flex">
+                        <img src="images/luuis.jpg" alt="user">
+                        <div>
+                          <p class="text-info mb-1">luis arroyo</p>
+                          <p class="mb-0">No podre ir a clases hoy profe</p>
+                          <small>10:30 am</small>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="d-flex">
+                      <img src="images/lau.jpg" alt="user">
+                     <div>
+                      <p class="text-info mb-1">Laura Mariota</p>
+                      <p class="mb-0">Alguien me ayuda a subir la actividad?</p>
+                      <small>11:30 am</small>
+                     </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="d-flex">
+                        <img src="images/bor.jpg" alt="user">
+                        <div>
+                          <p class="text-info mb-1">Jesus Bohorquez</p>
+                          <p class="mb-0">Ya subi la actividad instructor</p>
+                          <small>8:50 am</small>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="d-flex">
+                        <img src="images/borja.jpeg" alt="user">
+                        <div>
+                        <p class="text-info mb-1">Rafael Borja</p>
+                        <p class="mb-0">No podre asistir a clases hoy.</p>
+                        <small>9:00 am</small>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2022. <a href="https://eliseovega.github.io/" target="_blank">Ing. Eliseo Vega</a> Instructor de Formacion Profesional</span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">SENA - CITS <i class="ti-heart text-danger ml-1"></i></span>
+          </div>
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Programa <a href="https://www.themewagon.com/" target="_blank">ADSI</a></span> 
+          </div>
+        </footer> 
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>   
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+
+  <!-- plugins:js -->
+  <script src="vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <script src="vendors/chart.js/Chart.min.js"></script>
+  <script src="vendors/datatables.net/jquery.dataTables.js"></script>
+  <script src="vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+  <script src="js/dataTables.select.min.js"></script>
+
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="js/off-canvas.js"></script>
+  <script src="js/hoverable-collapse.js"></script>
+  <script src="js/template.js"></script>
+  <script src="js/settings.js"></script>
+  <script src="js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="js/dashboard.js"></script>
+  <script src="js/Chart.roundedBarCharts.js"></script>
+  <!-- End custom js for this page-->
+</body>
+
+</html>
+
