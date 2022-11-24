@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider JS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+</head>
+<body>
+    <div class="container">
+        <div class="owl-carousel" id="slider">
+            <div style="background-image: url(img/agua2.jpg)"></div>
+            <div style="background-image: url(img/aguafondo.jpg)"></div>
+            <div style="background-image: url(img/agua1.jpg)"></div>
+        </div>
+        <nav class="menu">
+            <div class="nav">
+                <a href="#">Inicio <i class="fa-solid fa-house"></i></a>
+                <a href="#nosotros">Nosotros <i class="fa-sharp fa-solid fa-users"></i></a>
+                <a href="#portafolio">Procesos <i class="fa-solid fa-briefcase"></i></a>
+                <a href="#servicios">Productos <i class="fa-solid fa-bell-concierge"></i></a>
+                <a href="#contactos">Contactos <i class="fa-solid fa-phone"></i></a>
+            </div>
+        </nav>
+        <div class="texto-slider">
+            <img src="img/logosinfondo.png" alt="logo">
+            <p>Elige AGUA NATURA, agua purificada, libre de sodio y cloro! Es la mejor marca de agua escogida por los sucreños.</p>
+            <div class="btn-slider">
+                <a href="#" class="btn-1">Leer más   <i class="fa-solid fa-circle-info"></i></a>
+                <a href="#" class="btn-2">Contactos</a>
+            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+            <script src="https://kit.fontawesome.com/64140dff8f.js" crossorigin="anonymous"></script>
+            
+            <div class="js">
+                <script src="js/app.js"></script>
+            </div>
+        </div>
+    </div>
+
+    <section class="nosotros-area" id="nosotros">
+        <h3 class="section-title"> <i class="fa-solid fa-water"></i> Agua <span>Natura <i class="fa-solid fa-water"></i></span></h3>
+        <ul class="nosotros-content">
+            <li class="nosotros-left">
+                 <img src="img/bottela.png" width="300px" alt="nosotros">
+            </li>
+            <li class="nosotros-right">
+                <h2>¿Por qué elegir Agua Natura?</h2>
+                <p>Agua Natura es el agua embotellada más vendida en Sucre. Reconocida por ser el agua de vida que refresca los mejores momentos, que inspira a elegir lo mejor para la vida.</p>
+                <p><i class="fa-solid fa-arrow-right"></i></i> Experiencia de Calidad</p>
+                <p><i class="fa-solid fa-arrow-right"></i></i> Servicio Técnico</p>
+                <p><i class="fa-solid fa-arrow-right"></i></i> Compra online</p>
+                <p><i class="fa-solid fa-arrow-right"></i></i> Distribuimos a cualquer parte del pais</p>
+                <p><i class="fa-solid fa-arrow-right"></i></i> Servicio 24 horas</p>
+            </li>
+        </ul>
+    </section>  <!--FINALIZA NOSOTROS-->
+
+    <!--COMIENZA MJS PARALLAX-->
+    <section class="mensaje-area">
+        <div class="mensaje-content">
+            <h2>“Si hay magia en este planeta, está contenida en el agua”</h2>
+            <p>Cuando estás deshidratado, tu mente y tu cuerpo se desconectan y ahí pierdes la cabeza. Conecta mente y cuerpo e hidrátate con Agua Natura, hecha de botellas recicladas y a un excelente precio.</p>
+        </div>
+    </section> <!--FINAL SECCION MENSAJE-->
+
+    <!--inicio seccion portafolio-->
+    <section class="portafolio-area" id="portafolio">
+        <h3 class="section-title"> Proceso <span>del agua</span></h3>
+        <ul class="portafolio-content">
+            <li>
+                <img src="img/recole.jpg" alt="">
+                <h4>Recoleccion de agua</h4>
+                <p> La composición química del agua de pozo varía con la región, formación geológica subyacente y contaminación medioambiental, y puede ser perjudicial, beneficiosa o simplemente indeseable. Por ejemplo, cierta cantidad de flúor es deseable, mientras que el hierro es indeseable. Muchas otras sustancias químicas, algunas de las cuales son potencialmente tóxicas, pueden contaminarla, siendo atribuible su presencia o ausencia a los factores geológicos naturales o a los vertidos de la industria, explotaciones agrícolas o empresas</p>
+            </li>
+            <li>
+                <img src="img/FILTRADO2-3.jpg" alt="">
+                <h4>Purificacion de agua</h4>
+                <p>La purificación de agua juega un papel indispensable en la obtención de materias primas de mejor calidad, ya que esto garantiza que el agua está libre de residuos contaminantes, metales pesados, microorganismos patógenos, residuos sólidos. La purificación de agua garantiza el acceso al agua potable.</p>
+            </li>
+            <li>
+                <img src="img/Embotelladoras-2.jpg" alt="">
+                <h4>Embotellar el agua</h4>
+                <p>Las botellas se mueven de una embotelladora de agua mineral a una máquina de taponado que pone un tapón en cada una de ellas y sella el agua en una atmósfera protegida. Después del tapado, el agua está preparada para la comercialización y venta a nivel local o a gran escala.</p>
+            </li>
+        </ul>
+    </section>
+
+    <!--INICIO SECCION CLIENTE SLIDER-->
+    <section class="clientes-area">
+        <div class="clientes-content">
+            <div class="item"> <img src="img/c1.png" alt=""></div>
+            <div class="item"> <img src="img/c2.png" alt=""></div>
+            <div class="item"> <img src="img/c3.png" alt=""></div>
+            <div class="item"> <img src="img/c4.png" alt=""></div>
+            <div class="item"> <img src="img/c5.png" alt=""></div>
+        </div>
+
+    </section>
+
+    <section class="servicios-area" id="servicios">
+        <h3 class="section-title">Nuestros<span> Productos</span></h3>
+        <ul class="servicios-content">
+            <li>
+                <img src="img/botellitas.jpg" alt="">
+                <h4>Bottelas 1 Litro</h4>
+                <div class="social">
+                    <i class="fa-solid fa-wallet"></i>
+                </div>
+                <a href="http://wa.link/ow5lau">
+                    <p class="pi"> $2.500</p>
+                <p>¡¡COMPRAR AHORA!!</p>
+                </a>
+                
+            </li>
+            <li>
+                <img src="img/botellones.jpg" alt="">
+                <h4>Botellon 20 litros</h4>
+                <div class="social">
+                    <i class="fa-solid fa-wallet"></i>
+                </div>
+                <a href="http://wa.link/ow5lau">
+                    <p class="pi"> $17.000</p>
+                <p>¡¡COMPRAR AHORA!!</p>
+                </a>
+            </li>
+            <li>
+                <img src="img/BOLSA-AGUA-360ml.png" height="230px" width="190px" alt="">
+                <h4>Bolsas de agua 350mlt X30und</h4>
+                <div class="social">
+                    <i class="fa-solid fa-wallet"></i>
+                </div>
+                <a href="http://wa.link/ow5lau">
+                    <p class="pi"> $3.000</p>
+                <p>¡¡COMPRAR AHORA!!</p>
+                </a>
+            </li>
+            <li>
+                <img src="img/bolis.png" alt="">
+                <h4>Bolis de sabores</h4>
+                <div class="social">
+                    <i class="fa-solid fa-wallet"></i>
+                </div>
+                <a href="http://wa.link/ow5lau">
+                    <p class="pi"> $1.500</p>
+                <p>¡¡COMPRAR AHORA!!</p>
+                </a>
+            </li>
+            <li>
+                <img src="img/hielo.png" height="230px" width="190px" alt="">
+                <h4>Bolsas de hielo</h4>
+                <div class="social">
+                    <i class="fa-solid fa-wallet"></i>
+                </div>
+                <a href="http://wa.link/ow5lau">
+                    <p class="pi"> $1.500</p>
+                <p>¡¡COMPRAR AHORA!!</p>
+                </a>
+        </ul>
+    </section>
+
+    <!--INICIO FOOTER-->
+    <Section class="contactos-area" id="conotactos">
+        <h3 class="section-title">Informacion de <span>Contactos</span></h3>
+        <ul class="contactos-content">
+            <li>
+            <i class="fa-sharp fa-solid fa-compass"></i>
+            <p>Sincelejo - Sucre <br>
+            Colombia</p>
+            </li>
+            <li>
+                <i class="fa-solid fa-phone-volume"></i>
+                <p>+573002108888<br>
+                600 2740873</p>
+            </li>
+            <li>
+                <i class="fa-solid fa-envelope"></i>
+                <p>aguanatura@.gmail.com<br>
+                yeith31.github.io</p>
+            </li>
+        </ul>
+
+    </Section>
+    <footer>
+        <p>&copy;2022 AGUA NATURA</p>
+    </footer>
+    
+</body>
+</html>

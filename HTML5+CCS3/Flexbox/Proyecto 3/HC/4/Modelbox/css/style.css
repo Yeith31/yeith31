@@ -1,0 +1,53 @@
+*{
+    margin:0%;
+    padding:0%;
+}
+
+.container{
+
+
+    background-color: aquamarine;
+    color:black;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 0px 50px 0px 50px;
+    text-align: center;
+    border: 2px solid black;
+    float: left;
+}
+.container:hover{
+    background-color: brown;
+    border-color:2px solid azure ;
+}
+.container2{
+
+
+    background-color: aquamarine;
+    color:black;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 0px 50px 0px 50px;
+    text-align: center;
+    border: 2px solid black;
+    float: left;
+}
+.container2:hover{
+    background-color: brown;
+    border-color:2px solid azure ;
+}
+
+.container3{
+
+
+    background-color: aquamarine;
+    color:black ;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 0px 50px 0px 50px;
+    text-align: center;
+    border: 2px solid black;
+    float: left;
+}

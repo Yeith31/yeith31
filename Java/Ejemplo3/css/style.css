@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2? family= Roboto & display=swap');
+
+
+h1{
+    background-color:#6aa3b4;
+    border-radius: 15px;
+    text-align: center;
+    padding: 12px;
+}
+h2{
+
+background-color: #00b7e5;
+border-radius: 15px;
+padding: 12px;
+}
+
+ol{
+background-color:#e2e2e2 ;
+border-radius: 15px;
+padding: 12px;
+
+}
+
+
+div{
+    background-color:#0e6f41;
+    padding: 12px;
+    border-radius: 15px;
+    border-radius:20px;
+    text-align: center;
+}
+
+body{
+    background-color: azure;
+    font-family: 'Roboto', sans-serif;
+    
+}

@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: antiquewhite;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+}
+
+section{
+    width: 80%;
+    height: 100vh;
+    background-color: aqua;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+   /* flex-flow:row wrap */
+   align-items:center;
+   text-align: center;
+   flex-wrap: wrap;
+   justify-content: center;
+   
+}
+
+section article{ 
+
+    width: 80%;
+    height: 150px;
+    margin: 10px;
+    background-color: black;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.item{
+    width: 30%;
+    height: 80%;
+    display: flex;
+    background-color: blue;
+    color: #fff;
+    margin: 5px;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+   
+}

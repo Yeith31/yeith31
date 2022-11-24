@@ -1,0 +1,4 @@
+#APP QUE MUESTRE UNA PALABRA 10 VECES REPITIDAS
+x=input("DIGITE SU PALABRA: ")
+for i in range(10):
+    print(x)
